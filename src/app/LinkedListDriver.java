@@ -1,9 +1,22 @@
 package app;
 
-import linkedList.*;
+import arrayList.LinkedListStack;
+import arrayList.StackInterface;
+import linkedList.LLNode;
 
 public class LinkedListDriver {
-  public static void main(String[] args){
+  public static void main(String[] args) {
+    StackInterface<String> llstack = new LinkedListStack<String>();
+    llstack.push("A");
+    llstack.push("B");
+    llstack.push("C");
+
+    System.out.println(llstack.top());
+    llstack.pop();
+    System.out.println(llstack.top());
+    llstack.pop();
+    System.out.println(llstack.top());
+
     // create LLNode with some letters
     LLNode<String> node1 = new LLNode<String>("Mike, ");
     LLNode<String> node2 = new LLNode<String>("Donovan, ");
