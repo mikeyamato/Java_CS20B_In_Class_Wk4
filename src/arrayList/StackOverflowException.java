@@ -1,6 +1,6 @@
 package arrayList;
 
-public class StackOverflowException extends RuntimeException {
+public class StackOverflowException extends Exception {
   public StackOverflowException(){
     super();
   }
